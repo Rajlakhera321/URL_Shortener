@@ -31,7 +31,7 @@ export default function Login() {
       return;
     }
     const response = await fetch(
-      "https://friendly-space-zebra-444g94vw9rfqxq9-3030.app.github.dev/app/v1/add",
+      "https://url-shortener-p22z.onrender.com/app/v1/add",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

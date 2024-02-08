@@ -12,7 +12,7 @@ export default function LinkShortener(props) {
       let id = localStorage.getItem("userId");
       let token = localStorage.getItem("authToken");
       const response = await fetch(
-        "https://friendly-space-zebra-444g94vw9rfqxq9-3030.app.github.dev/app/v1/createURL",
+        "https://url-shortener-p22z.onrender.com/app/v1/createURL",
         {
           method: "POST",
           headers: { "Content-Type": "application/json", Authorization: token },
@@ -24,7 +24,7 @@ export default function LinkShortener(props) {
       );
       const json = await response.json();
       props.getList();
-      setShortenLink(`https://friendly-space-zebra-444g94vw9rfqxq9-3030.app.github.dev/app/v1/${json.shortid}`);
+      setShortenLink(`https://url-shortener-p22z.onrender.com/app/v1/${json.shortid}`);
     } catch (error) {
       console.log(error);
       setError(error);

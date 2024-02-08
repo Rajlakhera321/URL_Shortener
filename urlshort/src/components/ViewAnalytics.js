@@ -15,19 +15,19 @@ export default function ViewAnalytics() {
     },[])
 
     function fetchURL() {
-        fetch(`https://friendly-space-zebra-444g94vw9rfqxq9-3030.app.github.dev/app/v1/url/${view.id}`,
+        fetch(`https://url-shortener-p22z.onrender.com/app/v1/url/${view.id}`,
         {
             method: "GET",
             headers: { "Content-Type": "application/json", Authorization: token },
         }).then((result)=>{
             result.json().then((res)=>{
-                setURL(`https://friendly-space-zebra-444g94vw9rfqxq9-3030.app.github.dev/app/v1/${res[0].shortUrl}`);
+                setURL(`https://url-shortener-p22z.onrender.com/app/v1/${res[0].shortUrl}`);
             })
         })
     }
 
     function fetchData() {
-        fetch(`https://friendly-space-zebra-444g94vw9rfqxq9-3030.app.github.dev/app/v1/anaytics/${view.id}`,
+        fetch(`https://url-shortener-p22z.onrender.com/app/v1/anaytics/${view.id}`,
         {
             method: "GET",
             headers: { "Content-Type": "application/json", Authorization: token },

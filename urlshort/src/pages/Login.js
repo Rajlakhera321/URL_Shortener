@@ -14,7 +14,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch(
-      "https://friendly-space-zebra-444g94vw9rfqxq9-3030.app.github.dev/app/v1/login",
+      "https://url-shortener-p22z.onrender.com/app/v1/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },

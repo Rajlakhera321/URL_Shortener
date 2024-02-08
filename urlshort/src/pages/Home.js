@@ -16,7 +16,7 @@ export default function Home() {
     const userId = localStorage.getItem("userId");
     console.log(userId);
     fetch(
-      `https://friendly-space-zebra-444g94vw9rfqxq9-3030.app.github.dev/app/v1/urlId/${userId}`,
+      `https://url-shortener-p22z.onrender.com/app/v1/urlId/${userId}`,
       {
         method: "GET",
         headers: { "Content-Type": "application/json", Authorization: token },
@@ -31,7 +31,7 @@ export default function Home() {
 
   function deleteUser(id) {
     fetch(
-      `https://friendly-space-zebra-444g94vw9rfqxq9-3030.app.github.dev/app/v1/urlId/delete/${id}`,
+      `https://url-shortener-p22z.onrender.com/app/v1/urlId/delete/${id}`,
       {
         method: "DELETE",
         headers: { "Content-Type": "application/json", Authorization: token },
@@ -67,7 +67,7 @@ export default function Home() {
                 <tr key={i}>
                   <th>{i + 1}</th>
                   <th className="originalRow">{item.originalUrl}</th>
-                  <th>{`https://friendly-space-zebra-444g94vw9rfqxq9-3030.app.github.dev/app/v1/${item.shortUrl}`}</th>
+                  <th>{`https://url-shortener-p22z.onrender.com/app/v1/${item.shortUrl}`}</th>
                   <th>
                     <button>Update</button>
                   </th>
