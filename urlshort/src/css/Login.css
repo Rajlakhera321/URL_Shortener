@@ -1,0 +1,234 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  margin-top: 50px;
+  background-color: white;
+  padding-bottom: 30px;
+  background: transparent;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.text {
+  color: #d5ff2b;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.underline {
+  width: 61px;
+  height: 6px;
+  background: #1bc2f1;
+  border-radius: 9px;
+}
+
+.inputs {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 350px;
+  height: 50px;
+  background: #eaeaea;
+  border-radius: 6px;
+}
+
+.input img {
+  margin: 0px 30px;
+}
+
+.input input {
+  height: 20px;
+  width: 200px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px;
+}
+
+.forget-password {
+  margin-top: 27px;
+  color: #797979;
+  font-size: 18px;
+}
+
+.forget-password span {
+  color: #db0909;
+  cursor: pointer;
+}
+
+.submit-container {
+  display: flex;
+  gap: 30px;
+  margin: 30px auto;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 49px;
+  color: #fff;
+  background-color: #4c00b4;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* InputShortener CSS */
+
+.inputContainer {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.4rem;
+}
+
+.inputContainer h1 span {
+  color: #f99f38;
+}
+
+.inputContainer div {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.inputContainer input {
+  width: 100%;
+  padding: 0.5rem 0.2rem 0.5rem 0;
+  text-indent: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.inputContainer input::placeholder {
+  font-size: 0.9rem;
+}
+
+.inputContainer button {
+  padding: 0 1rem;
+  height: 3rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  color: #fff;
+  background-color: #f99f38;
+  border: none;
+  cursor: pointer;
+}
+
+/* Result */
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.result p {
+  color: #fff;
+  border: 1px solid #f99f38;
+  padding: 0.7rem 1rem;
+  margin-right: 1rem;
+}
+
+.result button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  background: #f99f38;
+  border: none;
+}
+
+.result button .copied {
+  background-color: #fff;
+  color: #f99f38;
+}
+
+.noData {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* table */
+
+.table{
+  display: flex;
+  flex-direction: column;
+  word-break: break-all ;
+  margin: 0px 50px;
+  align-items: center;
+  background-color: white;
+  padding-bottom: 30px;
+  background: transparent;
+}
+
+.urlTable table, th, td {
+    border: 1px solid black;  
+    border-collapse: collapse;  
+}  
+.urlTable th, td {  
+    padding: 10px;  
+}  
+.urlTable table#alter tr:nth-child(even) {  
+    background-color: #eee;  
+}  
+.urlTable table#alter tr:nth-child(odd) {  
+    background-color: #fff;  
+}  
+.urlTable table#alter th {  
+    color: white;  
+    background-color: gray;  
+} 
+
+.originalRow{
+  width: 36%;
+}
+
+/* View Analytics */
+
+.viewContainer{
+  font-weight: 800;
+  margin: 10% auto;
+  border: 2px solid red;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  word-break: break-all ;
+  overflow: none;
+}
+
+.view{
+  text-decoration: none;
+}
