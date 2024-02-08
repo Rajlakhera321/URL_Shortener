@@ -50,7 +50,7 @@ export default function Home() {
         <LinkShortener inputValue={inputValue} getList={getList}/>
       </div>
       <div className="table">
-        {data.length == 0 ? (
+        {data.length === 0 ? (
           ""
         ) : (
           <div className="urlTable">

@@ -1,11 +1,9 @@
 import "../css/Login.css";
 import React, { useState } from "react";
-import LinkShortener from "./LinkShortener";
 import { validateUrl } from "./ValidURL";
 
 export default function InputShortener(props) {
   const [shortenLink, setShortenLink] = useState("");
-  const [value, setValue] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();

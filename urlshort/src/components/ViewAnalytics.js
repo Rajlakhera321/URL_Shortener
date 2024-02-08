@@ -7,7 +7,7 @@ export default function ViewAnalytics() {
     const view = useParams();
     const token = localStorage.getItem("authToken");
     console.log(data.length,"data data data")
-    const date = data.analytics!=0 ? data.analytics?.[data.totalClicks-1].time?.split('T') : "";
+    const date = data.analytics !== 0 ? data.analytics?.[data.totalClicks-1].time?.split('T') : "";
     console.log(date,"asfasdfasdfasf");
     useEffect(() => {
         fetchURL();
